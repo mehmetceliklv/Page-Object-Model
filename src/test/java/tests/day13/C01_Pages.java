@@ -11,6 +11,9 @@ import utilities.TestBase;
 
 public class C01_Pages extends TestBase {
 
+    // amazon sayfasina gidip
+    // nutella icin arama yapin
+    // sonuc sayisini yazdirin ve sonuc yazisinin nutella icerdigini test edin
     @Test
     public void test(){
 

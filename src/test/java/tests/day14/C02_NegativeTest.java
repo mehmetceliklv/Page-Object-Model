@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.ConcortHotelPage;
 import utilities.TestBase;
 
-public class NegativeTest extends TestBase {
+public class C02_NegativeTest extends TestBase {
 
     @Test
     public void negativeTest(){
