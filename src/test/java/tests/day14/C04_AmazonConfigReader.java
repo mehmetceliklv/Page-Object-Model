@@ -22,6 +22,7 @@ public class C04_AmazonConfigReader extends TestBase {
 
         System.out.println(amazonPage.sonucYazisiElementi.getText());
 
-        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains(ConfigReader.getProperty("amazonArananKelime")));
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText()
+                .contains(ConfigReader.getProperty("amazonArananKelime")));
     }
 }

@@ -11,6 +11,7 @@ public class C02_NegativeTest extends TestBase {
     public void negativeTest(){
         //Bir test method olustur NegativeLoginTest()
         //	https://www.concorthotel.com/ adresine git
+
         ConcortHotelPage concortHotelPage=new ConcortHotelPage(driver);
         driver.get("https://www.concorthotel.com/");
 
