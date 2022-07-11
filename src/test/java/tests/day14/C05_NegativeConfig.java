@@ -9,10 +9,9 @@ import utilities.TestBase;
 public class C05_NegativeConfig extends TestBase {
 
     @Test
-    public void test (){
+    public void test () throws InterruptedException {
 
         driver.get(ConfigReader.getProperty("CHUrl"));
-
         ConcortHotelPage concortHotelPage=new ConcortHotelPage(driver);
 
         concortHotelPage.ilkLoginTusu.click();

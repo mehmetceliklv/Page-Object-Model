@@ -9,12 +9,12 @@ import utilities.Driver;
 public class positiveLogintest {
 
     @Test
-    public void test(){
+    public void test() throws InterruptedException {
 
         Driver.getDriver().get(ConfigReader.getProperty("CHQAUrl"));
-
         QAConcortPage qaConcortPage=new QAConcortPage();
-
+        qaConcortPage.connectionNotPrivateAdvancedButton.click();
+        qaConcortPage.connectionProceedButton.click();
         qaConcortPage.ilkLoginTusu.click();
         qaConcortPage.userNameKutusu.sendKeys(ConfigReader.getProperty("CHQAValidUsername"));
         qaConcortPage.passwordKutusu.sendKeys(ConfigReader.getProperty("CHQAValidPassword"));
@@ -23,5 +23,6 @@ public class positiveLogintest {
         Assert.assertTrue(qaConcortPage.basariliGirisYaziElementi.isDisplayed());
 
         Driver.closeDriver();
+
     }
 }

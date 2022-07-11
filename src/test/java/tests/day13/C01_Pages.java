@@ -15,7 +15,7 @@ public class C01_Pages extends TestBase {
     // nutella icin arama yapin
     // sonuc sayisini yazdirin ve sonuc yazisinin nutella icerdigini test edin
     @Test
-    public void test(){
+    public void test() throws InterruptedException {
 
         driver.get("https://www.amazon.com");
         WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));

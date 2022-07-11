@@ -10,12 +10,13 @@ import utilities.TestBase;
 public class C03_Pages extends TestBase {
 
     @Test
-    public void test(){
+    public void test() throws InterruptedException {
 
         // amazon sayfasina gidin
         driver.get("https://www.amazon.com");
 
         // dropdown menuden book kategorisini secin
+        Thread.sleep(5000);
         AmazonPage amazonPage=new AmazonPage(driver);
         Select select= new Select(amazonPage.dropdownMenu);
         select.selectByVisibleText("Books");
